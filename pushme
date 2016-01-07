@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+BRANCH_NAME=$(git symbolic-ref HEAD | sed -e "s/^refs\/heads\///")
+
+#echo $BRANCH_NAME
+
+git push origin $(BRANCH_NAME)
