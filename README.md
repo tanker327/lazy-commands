@@ -1,3 +1,3 @@
 # lazy-commands
 
-Good programer is lazy programer!
+Better programer is the lazy one!
