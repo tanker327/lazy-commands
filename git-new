@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ $1 == 'feature' ]
+if [ '$1' == 'feature' ]
 then
     BRANCH="dev"    
-elif [ $1 == 'hotfix' ]
+elif [ '$1' == 'hotfix' ]
 then
     BRANCH="master"    
 else    
@@ -19,4 +19,5 @@ then
     git checkout $BRANCH    
 fi    
 
+git pull origin $BRANCH
 git checkout -b $1/$2
